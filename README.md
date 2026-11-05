@@ -2,6 +2,8 @@
 
 CyberPanel CLI PHP Version Changer is a Bash script that simplifies the process of changing the default PHP version for the command line in your CyberPanel environment. This script provides an interactive menu to easily change the PHP version on Ubuntu and Centos 7 Operating systems, including those managed with Composer.
 
+![Demo of cyberpanel-cli-php-version-changer: the interactive menu switching the CLI PHP version to lsphp82](docs/demo.gif)
+
 ## Table of Contents
 - [Features](#features)
 - [Requirements](#requirements)
@@ -25,7 +27,7 @@ CyberPanel CLI PHP Version Changer is a Bash script that simplifies the process 
 ## Usage
 
 ```
-sh <(curl https://raw.githubusercontent.com/kalprajsolutions/CyberPanel-CLI-PHP-Version-Changer/main/change_php_version.sh || wget -O - https://raw.githubusercontent.com/kalprajsolutions/CyberPanel-CLI-PHP-Version-Changer/main/change_php_version.sh)
+bash <(curl https://raw.githubusercontent.com/kalprajsolutions/CyberPanel-CLI-PHP-Version-Changer/main/change_php_version.sh || wget -O - https://raw.githubusercontent.com/kalprajsolutions/CyberPanel-CLI-PHP-Version-Changer/main/change_php_version.sh)
 ```
 
 ## Installation

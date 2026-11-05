@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # List of available PHP versions
 php_versions="lsphp72 lsphp73 lsphp74 lsphp80 lsphp81 lsphp82 lsphp83"
@@ -12,11 +12,11 @@ for php_version in $php_versions; do
 done
 
 # Get user's choice
-read -p "Enter the number corresponding to the PHP version: " choice
+read -rp "Enter the number corresponding to the PHP version: " choice
 
 # Validate the choice
 if [ "$choice" -ge 0 ] && [ "$choice" -lt $i ]; then
-    selected_version=$(echo $php_versions | cut -d " " -f $(($choice + 1)))
+    selected_version=$(echo "$php_versions" | cut -d " " -f $((choice + 1)))
     echo "Changing PHP version to $selected_version..."
 
     # Remove existing PHP binary symlink if it exists
